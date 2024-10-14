@@ -1,0 +1,14 @@
+C:\Users\chan0\source\repos\ShrTut\bin\Debug\net8.0\ShrTut.exe
+C:\Users\chan0\source\repos\ShrTut\bin\Debug\net8.0\ShrTut.deps.json
+C:\Users\chan0\source\repos\ShrTut\bin\Debug\net8.0\ShrTut.runtimeconfig.json
+C:\Users\chan0\source\repos\ShrTut\bin\Debug\net8.0\ShrTut.dll
+C:\Users\chan0\source\repos\ShrTut\bin\Debug\net8.0\ShrTut.pdb
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ShrTut.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ShrTut.AssemblyInfoInputs.cache
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ShrTut.AssemblyInfo.cs
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ShrTut.csproj.CoreCompileInputs.cache
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ShrTut.dll
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\refint\ShrTut.dll
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ShrTut.pdb
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ShrTut.genruntimeconfig.cache
+C:\Users\chan0\source\repos\ShrTut\obj\Debug\net8.0\ref\ShrTut.dll
