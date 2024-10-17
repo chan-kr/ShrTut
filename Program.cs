@@ -7,23 +7,32 @@ namespace ShrTut
     {
         static void Main(string[] args)
         {
-            //2일차 조건문 공부(1) - if문 
-            Console.WriteLine("숫자를 입력하세요: ");
+            // C# 기본문법 - 제어문(2) - switch문
+            Console.WriteLine("1부터 5 사이의 숫자를 입력하세요: ");
             string input = Console.ReadLine();
 
             if (int.TryParse(input, out int number))
             {
-                if (number > 0)
+                switch (number)
                 {
-                    Console.WriteLine("입력한 숫자는 양수입니다.");
-                }
-                else if (number < 0)
-                {
-                    Console.WriteLine("입력한 숫자는 음수입니다.");
-                }
-                else
-                {
-                    Console.WriteLine("입력한 숫자는 0입니다.");
+                    case 1:
+                        Console.WriteLine("매우 나쁨");
+                        break;
+                    case 2:
+                        Console.WriteLine("나쁨");
+                        break;
+                    case 3:
+                        Console.WriteLine("보통");
+                        break;
+                    case 4:
+                        Console.WriteLine("좋음");
+                        break;
+                    case 5:
+                        Console.WriteLine("매우 좋음");
+                        break;
+                    default:
+                        Console.WriteLine("1부터 5 사이의 숫자를 입력해주세요.");
+                        break;
                 }
             }
             else
