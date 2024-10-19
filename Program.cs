@@ -7,14 +7,13 @@ namespace ShrTut
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1부터 10까지의 숫자를 출력합니다:");
-
-            for (int i = 1; i <= 10; i++)
+            int i = 1;
+            
+            while (i <= 10)
             {
                 Console.WriteLine(i);
+                i++;
             }
-
-            Console.WriteLine("for문이 종료되었습니다.");
         }
     }
 }
