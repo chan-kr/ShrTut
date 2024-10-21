@@ -11,3 +11,9 @@
 - 클래스와 객체
 - Generic
 - 인터페이스
+
+### 후속 프로젝트
+
+- 오토마타 키보드 구현 with C#
+- 알고리즘 공부 with C#
+- To-Do List 구현 with WPF
