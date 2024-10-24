@@ -1,26 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
 namespace ShrTut
 {
 
-    public class Item<T>
+    class Box<T>
     {
-        // Generic type parameter
-        public T content { get; set; }
+        public T content{ get; set; }
 
-        public Item(T content)
-        {
+        public Box(T content){
             this.content = content;
         }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-
-        }
+            Box<String> BoxOne = new Box<String>("키크론 마우스");
+            Console.WriteLine(BoxOne.content);
+        }   
     }
-
-
 }
