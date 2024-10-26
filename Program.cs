@@ -89,8 +89,32 @@ namespace ShrTut
             Console.WriteLine("안녕하세요"[3]);
             Console.WriteLine("안녕하세요"[4]);
 
-            //불
+            //불(Bool) - 참과 거짓을 표현하는 자료형
+            Console.WriteLine(true);
+            Console.WriteLine(false);
+            Console.WriteLine("\n-------------------------------------------------------------\n");
 
+            //논리합 연산자(|| , OR)
+            Console.WriteLine("논리합 연산자(||)");
+            Console.WriteLine(true || true);
+            Console.WriteLine(true || false);
+            Console.WriteLine(false || true);
+            Console.WriteLine(false || false);
+            Console.WriteLine("\n-------------------------------------------------------------\n");
+
+            //논리곱 연산자(&& , AND)
+            Console.WriteLine("논리곱 연산자(&&)");
+            Console.WriteLine(true && true);
+            Console.WriteLine(true && false);
+            Console.WriteLine(true && false);
+            Console.WriteLine(false && false);
+            
+
+            //DateTime.Now.Hor과 불의 활용
+            Console.WriteLine("\n------------------------------------------------------------------\n");
+            Console.WriteLine(DateTime.Now.Hour < 3 || DateTime.Now.Hour > 8);
+            Console.WriteLine(3 < DateTime.Now.Hour && DateTime.Now.Hour < 8);
+            
             
         }   
     }
