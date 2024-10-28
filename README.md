@@ -15,4 +15,3 @@
 
 - 오토마타 키보드 구현 with C#
 - 알고리즘 공부 with C#
-- To-Do List 구현 with WPF
