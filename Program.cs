@@ -152,7 +152,23 @@ namespace ShrTut
             ulong unsignedBigNumber = 18446744073709551615;    // 부호 없는 int(64비트) 정수
             Console.WriteLine($"ulong 최소값: {ulong.MinValue}"); // 0
             Console.WriteLine($"ulong 최대값: {ulong.MaxValue}"); // 18,446,744,073,709,551,615
-            
+
+            /*
+            오버플로우(Overflow) 예제:
+            - int의 최대값은 약 21억(2,147,483,647)입니다
+            - 아래 예제에서는 20억 + 10억 = 30억이 되어야 하지만
+            - int가 저장할 수 있는 범위를 초과하여 오버플로우가 발생합니다
+            - 오버플로우가 발생하면 예상치 못한 값이 저장됩니다
+            - 이런 경우 더 큰 범위를 저장할 수 있는 long 자료형을 사용해야 합니다.
+            - 또는 음수를 사용하지 않는 경우, uint 자료형을 사용하면 됩니다.
+            */
+            int a = 2000000000;    // 20억
+            int b = 1000000000;    // 10억
+            int c = a + b;         // 오버플로우 발생!
+            Console.WriteLine(c);  // -1,294,967,296 출력
+
+
+
 
             
         }   
