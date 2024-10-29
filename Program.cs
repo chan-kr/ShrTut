@@ -59,7 +59,7 @@ namespace ShrTut
             /*
                 !!중요!!
                 정수끼리 연산하면 결과도 정수로 나온다. 나누었을 때에 소수점이 생기는 부분은
-                모두 사라진다. 얘를 들어 57번 라인과 같이 5/2를 하면 2.5가 나오지만 결과는 2가 됨. 
+                모두 사라진다. 예를 들어 57번 라인과 같이 5/2를 하면 2.5가 나오지만 결과는 2가 됨. 
                 이는 C언어 기반의 프로그래밍 언어(C, C++, C#, JAVA)의 특징임.
             */
 
@@ -114,7 +114,46 @@ namespace ShrTut
             Console.WriteLine("\n------------------------------------------------------------------\n");
             Console.WriteLine(DateTime.Now.Hour < 3 || DateTime.Now.Hour > 8);
             Console.WriteLine(3 < DateTime.Now.Hour && DateTime.Now.Hour < 8);
+            Console.WriteLine("\n------------------------------------------------------------------\n");
+
+            // 정수형 변수 선언
+            // int는 4바이트(32비트)를 사용하며, 맨 앞 1비트는 부호(+/-)를 나타내는 데 사용됨
+            // long은 8바이트(64비트)를 사용하며, 맨 앞 1비트는 부호(+/-)를 나타내는 데 사용됨
+            // unsigned 자료형(uint, ulong)은 맨 앞 비트도 숫자를 나타내는 데 사용되어 더 큰 양수를 저장할 수 있음
+            // 참고 영상 : https://www.youtube.com/watch?v=vEKkCLZ7n78 (C언어를 통해 설명하므로 소스코드가 아닌 이론만 참고 할 것.)
             
+            /*
+            int 자료형의 범위:
+            - int는 4바이트(32비트)의 메모리를 사용
+            - 맨 앞 1비트는 부호 비트로 사용 (0: 양수, 1: 음수)
+            - 나머지 31비트로 숫자를 표현
+            - 따라서 표현 가능한 범위는:
+              * 최소값: -2^31 = -2,147,483,648
+              * 최대값: 2^31-1 = 2,147,483,647
+            - int의 범위를 넘어가는 값을 저장하려고 하면 오버플로우 발생
+            
+            * 이러한 범위를 외울 필요는 없습니다!
+            * int.MinValue와 int.MaxValue를 사용하면 언제든지 
+              int 자료형의 최솟값과 최댓값을 확인할 수 있습니다.
+            */
+
+            int number = 100;                        // 32비트 정수
+            Console.WriteLine($"int 최소값: {int.MinValue}");    // -2,147,483,648
+            Console.WriteLine($"int 최대값: {int.MaxValue}");    // 2,147,483,647
+
+            uint unsignedNumber = 4000000000;        // 부호 없는 int(32비트) 32비트 정수
+            Console.WriteLine($"uint 최소값: {uint.MinValue}");  // 0
+            Console.WriteLine($"uint 최대값: {uint.MaxValue}");  // 4,294,967,295
+
+            long bigNumber = 9223372036854775807;    // int(64비트) 정수
+            Console.WriteLine($"long 최소값: {long.MinValue}");  // -9,223,372,036,854,775,808
+            Console.WriteLine($"long 최대값: {long.MaxValue}");  // 9,223,372,036,854,775,807
+
+            ulong unsignedBigNumber = 18446744073709551615;    // 부호 없는 int(64비트) 정수
+            Console.WriteLine($"ulong 최소값: {ulong.MinValue}"); // 0
+            Console.WriteLine($"ulong 최대값: {ulong.MaxValue}"); // 18,446,744,073,709,551,615
+            
+
             
         }   
     }
