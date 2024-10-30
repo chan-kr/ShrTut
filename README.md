@@ -13,6 +13,5 @@
 
 
 ## 후속 프로젝트
-
-- 오토마타 키보드 구현 with C#
-- 알고리즘 공부 with C#
+- WPF 기초 
+- Llama 챗봇 데스크탑 앱 Project
