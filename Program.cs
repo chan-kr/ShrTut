@@ -167,6 +167,12 @@ namespace ShrTut
             int c = a + b;         // 오버플로우 발생!
             Console.WriteLine(c);  // -1,294,967,296 출력
 
+            float f = 3.145f; // float 자료형은 소수점 이하 7자리까지 표현 가능(4바이트의 실수)
+            double d = 3.14159265358; // double 자료형은 소수점 이하 15자리까지 표현 가능(8바이트의 실수)
+
+            Console.WriteLine(f);
+            Console.WriteLine(d);
+
 
 
 
