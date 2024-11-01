@@ -172,9 +172,46 @@ namespace ShrTut
 
             Console.WriteLine(f);
             Console.WriteLine(d);
+            Console.WriteLine("\n------------------------------------------------------------------\n");
 
+            /*
+            복합 연산자(+=, -=, *=, /=, %=)
+            · += : 변수에 값을 더한 후 그 결과를 변수에 할당 (예: a += b는 a = a + b와 동일)
+            · -= : 변수에서 값을 뺀 후 그 결과를 변수에 할당 (예: a -= b는 a = a - b와 동일)
+            · *= : 변수에 값을 곱한 후 그 결과를 변수에 할당 (예: a *= b는 a = a * b와 동일)
+            · /= : 변수를 값으로 나눈 후 그 결과를 변수에 할당 (예: a /= b는 a = a / b와 동일)
+            · %= : 변수를 값으로 나눈 나머지를 변수에 할당 (예: a %= b는 a = a % b와 동일)
+            */
+            int compOper = 10;
+            compOper += 2;         // 10 + 2 = 12
+            Console.WriteLine(compOper);
+            compOper -= 2;         // 12 - 2 = 10
+            Console.WriteLine(compOper);
+            compOper *= 2;         // 10 * 2 = 20
+            Console.WriteLine(compOper);
+            compOper /= 2;         // 20 / 2 = 10
+            Console.WriteLine(compOper);
+            compOper %= 2;         // 10 % 2 = 0
+            Console.WriteLine(compOper);
 
+            string strA = "hello";
+            strA += " ";
+            strA += "world";
+            Console.WriteLine(strA);
+            
 
+            Console.WriteLine("\n------------------------------------------------------------------\n");
+
+            //증감 연산자(--A, A--, ++A, A++)
+            /*
+            전위 연산자(++A, --A) : 해당 줄이 실행되기 전에 변수의 값을 1 증가 또는 감소시킨 후 그 결과를 반환
+            후위 연산자(A++, A--) : 해당 줄이 실행된 후에 변수의 값을 1 증가 또는 감소시킨 후 그 결과를 반환
+            */
+            int a = 10;
+            Console.WriteLine(a++); // 출력결과 : 10
+            Console.WriteLine(++a); // 출력결과 : 12
+            Console.WriteLine(a--); // 출력결과 : 12
+            Console.WriteLine(--a); // 출력결과 : 10
 
             
         }   
