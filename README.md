@@ -15,3 +15,9 @@
 ## 후속 프로젝트
 - WPF 기초 
 - Llama 챗봇 데스크탑 앱 Project
+
+## 기술 스택
+- WPF
+- Llama 3.2 이상 버전
+- LangChain
+- 등등등
