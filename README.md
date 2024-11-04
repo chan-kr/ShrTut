@@ -20,4 +20,3 @@
 - WPF
 - Llama 3.2 이상 버전
 - LangChain
-- 등등등
